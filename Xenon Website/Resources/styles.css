@@ -1,0 +1,1015 @@
+ 
+ *{
+  box-sizing: border-box;
+  
+
+}
+
+ html {
+    
+    font-size: 16px;
+    
+  }
+
+  html , body{
+
+    overflow-x: hidden;
+  }
+
+  @font-face{
+    font-family: 'gotham';
+    src: url('./Fonts/GothamRoundedBold_21016.ttf');
+  }
+   
+   @font-face{
+    font-family: 'gothammed';
+    src:    url('./Fonts/GothamRoundedMedium_21022.ttf');
+    
+  }
+
+  h1{font-family: 'gotham';}
+  h2, h3, h4, h5, h6 {font-family: 'gothammed';}
+
+  p, li, a{
+    font-family: Helvetica, sans-serif;
+  }
+  
+  html{
+    scroll-behavior: smooth;
+  }
+  ol, ul {
+    list-style: none;
+  }
+
+
+.button {
+    border-radius: 30px;
+    background-color: #1A6CAE;
+    color: white;
+    padding: 1rem 1.67rem;
+    font-family: Helvetica, sans-serif !important;
+    vertical-align: center;
+    border: none;
+    
+  }
+
+  .buttonmob {
+    border-radius: 30px;
+    background-color: #1A6CAE;
+    color: white;
+    padding: 1rem 1rem;
+    font-family: Helvetica, sans-serif;
+    font-size: 0.75rem;
+    text-align: center;
+  }
+
+  .logo{
+    height: 3.4375rem;
+    margin-left: 0.5rem;
+    margin-right: 1.5rem;
+   
+  }
+
+  .logomob{
+    height: 2.4375rem;
+    margin-left: 0.5rem;
+    margin-right: 1.5rem;
+   
+  }
+
+  main{
+    position: relative;
+    top: 7.625rem;
+  }
+
+  @media only screen and (max-width: 690px){
+    
+    main{
+      position: relative;
+      top: 4.75rem;
+    }
+   
+
+
+  }
+
+ 
+  /* Header */ 
+
+ header {
+
+    border-bottom: solid 1px #c6c1c1;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    
+  }
+
+ 
+  
+
+  .icon{
+    height: 2.4375rem;
+  }
+
+  .desktop nav{
+    display: flex;
+    width: 100%;
+  }
+  .nav-1, .nav-2{
+    width: 50%;
+    
+  }
+
+  .nav-1 ul,  .nav-2 ul{
+    display:flex;
+    
+  }
+  .nav-2 ul {
+    justify-content: flex-end;
+  }
+ 
+  .nav-1 ul li, .nav-2 ul li{
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  li a.button{
+    margin-right: 1.5rem;
+  }
+
+
+  @media only screen and (min-width: 977px){
+
+header .tablet{
+  display: none;
+}
+
+header .mobile{
+  display: none;
+}
+
+
+
+  }
+
+  @media only screen and (min-width: 691px) and (max-width: 976px){
+
+    header .desktop {
+      display: none;
+    }
+
+    header .mobile{
+      display: none;
+    }
+  
+
+    .tablet nav{
+      display: flex;
+      width: 100%;
+    }
+
+    .nav-tab1 {
+      width: 60%;
+    }
+
+    .nav-tab2{
+      width: 40%;
+    }
+
+    .nav-tab1 ul, .nav-tab2 ul{
+
+    display:flex;}
+
+    .nav-tab2 ul{
+      justify-content: flex-end;
+    }
+
+    .nav-tab1 ul li, .nav-tab2 ul li{
+      display: flex;
+    align-items: center;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    }
+
+
+  }
+
+  @media only screen and (min-width: 50px) and (max-width: 690px)
+
+  {
+    header .desktop  {
+      display: none;
+    }
+
+    header .tablet{
+      display: none;
+    }
+
+    .nav-mob1 ul{
+      display:flex;
+      width: 100%;
+    }
+
+    .nav-mob1 ul li{
+      width: 50%;
+      display: flex;
+      display: flex;
+      align-items: center;
+      margin-left: 2rem;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+    .mobbut{
+    justify-content: center;
+    }
+
+
+  }
+
+  
+
+  /* Banner */
+
+  .ban-desktop{
+    display:flex;
+    width: 100%;
+    height: 100vh;
+    background-image: url(./images/St.Clare\'s.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+ 
+
+  .arrow{
+    height: 7.75rem;
+    width: 7.75rem;
+  }
+
+  .banner-right , .banner-left{
+    width: 50%;
+    display: flex;
+  }
+
+ 
+
+  
+  .banner-text{
+    display: flex;
+    align-items:flex-start;
+    flex-direction: column;
+    justify-content: center;
+    
+  }
+
+  .banner-text h2{
+    font-weight: 50.75rem;
+    color: white;
+    font-size: 3.25rem;
+    width: 75%;
+    font-family: 'gotham' !important;
+  }
+
+  .banner-text p{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: white;
+    width: 80%;
+    font-size: 1.40rem;
+  }
+
+  .banner-text button{
+
+    font-size: 1.20rem ;
+    border: none;
+  }
+
+
+  
+
+  .banner-right{
+    justify-content: flex-end;
+  }
+
+  .bannerimage1 , .bannerimage2{
+    display: flex;
+    align-items: center;
+  }
+
+  @media only screen and (min-width: 481px){
+    .ban-mobile{
+      display: none;
+
+
+    }
+
+
+  }
+
+
+  @media only screen and (max-width: 480px){
+    .ban-desktop{
+      display: none;
+
+
+    }
+
+    .ban-mobile{
+      
+      width: 100%;
+      height: 100vh;
+      background-image: url(./images/St.Clare\'s.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+
+    }
+
+    .banner-textmob{
+    height: 80%;
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    justify-content: center;
+
+    }
+
+    .banner-textmob h2{
+      font-weight: 50.75rem;
+      color: white;
+      font-size: 3.25rem;
+      width: 80%;
+      font-family: 'gotham' !important;
+    }
+
+    .banner-textmob p{
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+      color: white;
+      width: 80%;
+      font-size: 1.40rem;
+    }
+
+    .banbutmob{
+
+      width: 80%;
+    }
+
+    .banbutmob button{
+
+      font-size: 1.20rem ;
+      border: none;
+    }
+
+    .banner-bottom{
+      display:flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+
+
+
+  }
+
+
+  /* About Us */
+
+  .about-us{
+    display: flex;
+    padding: 2.5rem 1.5625rem;
+    flex-wrap: wrap;
+    background-color: #F2F2F2;
+    
+  }
+
+  .about-split1{
+    max-width: 50%;
+    min-width: 350px;
+    display: flex;
+    justify-content: center;
+    padding: 1.2rem 1rem;
+  }
+
+  .about-split1 h1{
+font-size: 3.2rem;
+max-width: 70%;
+letter-spacing: -0.05em;
+
+  }
+
+
+
+  .about-split2{
+    max-width: 50%;
+    min-width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.2rem 1rem;
+   
+  }
+
+  .about-split2 p{
+    
+    max-width: 80%;
+    line-height: 1.5rem;
+    letter-spacing: 0.03rem;
+    
+    
+      }
+
+      .about-usbut{
+        max-width: 80%;
+        display: flex;
+        justify-content: center;
+      }
+
+      @media only screen and (max-width: 480px){
+
+        .about-split1{
+          max-width: 100%;
+          min-width: 80%;
+        }
+
+          .about-split2{
+            max-width:100%;
+            min-width: 80%;
+            align-items: flex-start;
+          }
+
+
+
+
+
+
+        .about-split1 h1{
+          font-size: 2.5rem;
+          max-width: 100%;
+          letter-spacing: -0.05em;
+          
+            }
+
+            .about-usbut{
+              margin: 1rem;
+              
+
+
+
+            }
+      }
+
+      @media only screen and (min-width: 481px) and (max-width: 751px){
+
+        .about-split1{
+          max-width: 100%;
+          
+        }
+
+        
+        .about-split1 h1{
+          font-size: 1.5rem;
+          max-width: 100%;
+          letter-spacing: -0.05em;
+          
+            }
+
+          .about-split2{
+            max-width: 100%;}
+            margin-top: 1.5rem;
+            
+
+            .about-split2 p{
+              max-width: 100%;
+            }
+
+            
+
+          }
+
+
+/* Our Services */
+
+
+.services{
+  min-width: 100%;
+}
+
+.services-heading{
+  padding: 1.25rem;
+  font-weight: 400;
+  font-size: 5.2rem;
+
+
+}
+
+.services-container{
+
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  min-width: 100%;
+}
+
+.services-heading h1{
+
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.services1{
+  padding: 1.25rem;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+
+
+}
+.services2{
+  padding: 1.25rem;
+  display: flex;
+  width: 100%;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+
+}
+
+.CCTV , .Access-Control , .Fire-Alarm{
+
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  min-width: 33.33%;
+ 
+}
+
+.Emergency-Lighting ,  .KNX , .Intruder-Alarm{
+
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  min-width: 33.33%;
+ 
+}
+
+
+
+
+
+
+.servimg{
+
+  max-width: 3.5rem ;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.servdiv2{
+  margin-bottom: 1rem; 
+}
+
+.servdiv2 p{
+font-weight: bold;
+font-size: 1.5rem;
+
+}
+
+.servdiv3{
+  text-align: center;
+  max-width: 12rem
+}
+
+.servdiv4{
+
+  margin-top: 2rem;
+}
+.servdiv4 button{
+  
+  margin: 0 auto;
+} 
+
+@media only screen and (max-width:829px){
+
+  .KNX , .Intruder-Alarm{
+    min-width:50%;
+  }
+
+  .Emergency-Lighting{
+    min-width: 100%;
+    margin-top: 1.5rem;
+
+  }
+
+  .CCTV , .Access-Control{
+
+    min-width:50%;
+
+
+  }
+  
+  
+  .Fire-Alarm{
+
+    min-width: 100%;
+    margin-top: 1.5rem;
+  }
+
+}
+
+@media only screen and (max-width:680px){
+
+  .KNX , .Intruder-Alarm{
+    min-width:100%;
+    margin-top: 1.5rem;
+  }
+
+  .CCTV , .Access-Control{
+    min-width:100%;
+    margin-top: 1.5rem;
+  }
+
+  .services-container{
+
+    padding-top: 1.2rem ;
+  }
+  .services2{
+
+    padding: 0%;
+    margin-top: 1.5rem;
+  }
+
+
+
+}
+
+
+
+ /* Consultation*/
+
+ .consultation{
+
+  background-image: url(./images/1\ -\ Xenon\ Vans.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 66vh;
+ 
+ }
+
+ .consul-bg{
+width: 100%;
+height: 66vh;
+background-color: rgba(0,0,0,0.6);
+display: flex;
+justify-content: center;
+align-items: center;
+
+ }
+
+ .consul-container{
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding-top: 6.6vmax;
+  padding-bottom: 6.6vmax;
+  padding-right: 2vw;
+  padding-left: 2vw;
+ }
+
+ .consul-container h1{
+  font-size: 5.7rem;
+  text-align: center;
+  margin-bottom: 2rem;
+ }
+
+ .consul-container p{
+  font-size: 1.3rem;
+  text-align: center;
+ }
+
+ .consulbut{
+  padding: 2rem;
+  margin: 0 auto;
+ }
+
+ .consulbut  button{
+ font-size: 1.2rem ;
+ }
+
+ @media only screen and (max-width: 620px){
+
+
+  .consul-container h1{
+    font-size: 3rem;
+  }
+
+  .consulbut  button{
+    font-size: 1rem ;
+    }
+
+ }
+
+ @media only screen and (max-width: 300px){
+
+  .consul-container h1{
+    font-size: 2rem;
+  }
+
+  .consul-container p{
+    font-size: 1rem;
+    text-align: center;
+   }
+
+  .consulbut  button{
+    font-size: 0.8rem ;
+    }
+
+
+ }
+
+
+  /* Why Xenon */
+
+
+  .whyxenon-container h1{
+    padding-top: 3.125rem;
+    padding-right: 1.625rem;
+    padding-bottom: 1.625rem;
+    padding-left: 1.625rem;
+    font-size: 3rem;
+
+  }
+
+  .whyxenon-container ul{
+
+    display: flex;
+    width: 100%;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .wxul li{
+
+    max-width: 25%;
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    
+    
+  }
+
+  .image-box{
+
+   width: 100%;
+   overflow: hidden;
+    
+  }
+
+  .image-box img{
+    width: 100%;
+    height: auto;
+  }
+
+  .wxul li h3{
+
+    padding-top: 1rem;
+    font-size: 1.2rem;
+  }
+
+  .wxul li p{
+
+    text-align: center;
+    padding-top: 1rem;
+  }
+
+  @media screen and (max-width: 1174px){
+
+
+    .whyxenon-container ul{
+
+      padding-top: 2rem;
+    }
+
+    .wxul li{
+
+      max-width: 33%;
+      margin-top: 2rem;
+    }
+
+
+
+  }
+
+  @media screen and (max-width: 839px){
+
+    .wxul li{
+
+      max-width: 50%;
+      
+    }
+  }
+
+  @media screen and (max-width: 587px){
+
+    .wxul li{
+
+      max-width: 100%;
+      
+    }
+  }
+
+  @media only screen and (max-width: 300px){
+
+    .whyxenon-container h1{
+
+      font-size: 2rem;
+    }
+
+    .wxul li h3{
+
+      
+      font-size: 1rem;
+    }
+  
+    .wxul li p{
+  
+      
+      font-size: 0.8rem;
+    }
+
+    .whyxenon-container ul{
+
+      padding-top: 1rem;
+    }
+  
+
+
+  }
+
+  /* Footer */
+
+  footer{
+
+    position: relative;
+    top: 10rem;
+   
+    
+  }
+
+  .footer-container{
+
+    padding: 2.68rem 1.75rem;
+    width: 100%;
+    display: flex; 
+    color: white;
+    background-color: #333333;
+    flex-wrap: wrap;
+  }
+
+ .email , .links{
+    min-width: 50%;
+    
+  }
+
+  .heading{
+font-size: 2.5rem;
+font-weight: 600;
+
+  }
+
+ .email p{
+  margin-bottom: 1.5rem;
+
+ }
+
+ .links{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+ }
+
+ .services , .contact{
+
+  min-width: 50%;
+
+
+ }
+
+ .services h3{
+
+  margin-bottom: 1.5rem;
+  font-size: 2.1rem;
+  font-weight: 600;
+ }
+ .services ul li{
+
+  margin-bottom: 0.5rem;
+ }
+
+ .services ul li a{
+color: white !important;
+text-decoration: underline !important;
+
+ }
+
+ .contact h3{
+
+  margin-bottom: 1.5rem;
+  font-size: 2.1rem;
+  font-weight: 600;
+ }
+
+ .contact ul li{
+
+  margin-bottom: 0.5rem;
+ }
+
+ @media only screen and (min-width: 511px) and (max-width: 967px){
+
+  .email , .links{
+    min-width: 100%;
+    
+  }
+
+  .links{
+    margin-top: 2rem;
+    justify-content: flex-start;
+  }
+
+  
+
+  
+
+
+ }
+
+ @media only screen and (max-width: 510px){
+
+  .heading{
+    font-size: 1.8rem;
+    font-weight: 600;
+    
+      }
+
+      .services h3{
+
+       
+        font-size: 1.8rem;
+        font-weight: 600;
+       }
+
+      .contact h3{
+
+        font-size: 1.8rem;
+        font-weight: 600;
+       }
+
+  .email , .links{
+    min-width: 100%;
+    
+  }
+
+  .services{
+
+    min-width: 100%;
+    margin-top: 2rem;
+
+
+  }
+
+  .contact{
+    margin-top: 2rem;
+    min-width: 100%;
+  }
+
+
+
+ }
+
+
+
+
+
+
+
+
+  
+  
+  
+ 
